@@ -1,0 +1,31 @@
+.footer{
+    min-height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(206, 225, 219);
+}
+
+.footerContainer{
+    flex-direction: column;
+    gap: 40px;
+}
+
+.title{
+    background-color: mistyrose;
+}
+
+.social{
+    display: flex;
+    border: 1px solid;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 280px;
+    gap: 10px;
+}
+
+.icon{
+    width: 50px;
+    height: 50px;
+    background-color: lightskyblue;
+}
