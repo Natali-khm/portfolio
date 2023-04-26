@@ -1,9 +1,54 @@
-.container{
-    border: 1px solid;
-    width: 70%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 10px;
+.outerContainer {
+  /* border: 2px solid rgb(45, 230, 205); */
+  padding: 8vh 5vw 0;
+  overflow: scroll;
+  flex-grow: 1;
+  width: 100%;
+}
+
+.innerContainer {
+  /* border: 1px solid rgb(227, 19, 23); */
+  max-width: 44vw;
+  margin-bottom: 87px;
+  width: 100%;
+}
+
+.leftContainer {
+  /* border: 1px solid yellow; */
+  width: 40%;
+}
+
+.rightContainer {
+  /* border: 1px solid yellow; */
+  width: 50%;
+}
+
+/* Скрываем scrollbar для Chrome, Safari и Opera */
+.outerContainer::-webkit-scrollbar {
+  display: none;
+}
+
+/* Скрываем scrollbar для IE, Edge и Firefox */
+.outerContainer {
+  -ms-overflow-style: none; /* IE и Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+@media (max-width: 1040px) {
+  .innerContainer {
+    max-width: none;
+  }
+
+  .outerContainer {
+    padding: 8vh 4vw 0;
+  }
+
+  .leftContainer {
+    width: 100%;
+    margin-bottom: 55px;
+  }
+
+  .rightContainer {
+    width: 100%;
+  }
 }

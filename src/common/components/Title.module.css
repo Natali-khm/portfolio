@@ -1,0 +1,41 @@
+.titleContainer {
+  /* border: 1px solid green; */
+  margin-bottom: 55px;
+}
+
+.title {
+  color: #333;
+  font-weight: 700;
+  letter-spacing: 8px;
+  font-size: 16px;
+  font-family: "Poppins";
+}
+
+.title:after {
+  content: "";
+  height: 2px;
+  background-color: #c3bfc8;
+  display: inline-block;
+  flex-grow: 1;
+}
+
+.title {
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+}
+
+
+@media (max-width: 1600px) {
+  .title {
+    letter-spacing: 7px;
+  }
+}
+
+@media (max-width: 768px) {
+  .title {
+    letter-spacing: 4px;
+  }
+}

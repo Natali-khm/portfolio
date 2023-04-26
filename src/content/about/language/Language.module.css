@@ -1,0 +1,6 @@
+.diagrWrapper {
+  /* border: 1px solid; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}

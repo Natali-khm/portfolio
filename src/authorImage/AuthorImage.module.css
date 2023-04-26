@@ -1,0 +1,15 @@
+.photoContainer {
+  width: 40%;
+  height: 84vh;
+  background-color: #f6fbff;
+  background-image: url("../assets/images/monica.jpg");
+  background-size: cover;
+}
+
+@media (max-width: 1040px) {
+  .photoContainer {
+    width: 0px;
+    height: 0px;
+    background-image: none;
+  }
+}

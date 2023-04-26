@@ -1,22 +1,21 @@
 import React from 'react'
 import style from './Footer.module.css'
-import styleContainer from '../common/styles/Container.module.css'
+import tgIcon from './telegram.svg'
+import githubIcon from './github.svg'
+import liIcon from './linkedin.svg'
+import instIcon from './instagram.svg'
 
 
 const Footer = () => {
   return (
-    <div className={style.footer}>
-        <div className={`${styleContainer.container} ${style.footerContainer}`}>
-            <h2 className = {style.title}>Khamitsevich Nataliya</h2>
+     <div className={style.footer}>
             <div className={style.social}>
-                <div className={style.icon}></div>
-                <div className={style.icon}></div>
-                <div className={style.icon}></div>
-                <div className={style.icon}></div>
+                <div className={style.icon}><a href="/"><img src={tgIcon} alt="" /></a></div>
+                <div className={style.icon}><a href="/"><img src={githubIcon} alt="" /></a></div>
+                <div className={style.icon}><a href="/"><img src={liIcon} alt="" /></a></div>
+                <div className={style.icon}><a href="/"><img src={instIcon} alt="" /></a></div>
             </div>
-            <span>2023 Все права защищены</span>
-        </div>
-    </div>
+     </div>
   )
 }
 

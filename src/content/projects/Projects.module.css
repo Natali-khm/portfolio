@@ -1,0 +1,16 @@
+.projects{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+}
+
+
+@media (max-width: 1040px) {
+    .projects{
+        gap: 40px;
+    }
+  }
+  

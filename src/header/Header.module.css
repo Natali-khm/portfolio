@@ -1,7 +1,14 @@
 .header{
-  height: 80px;
-  background-color: rgb(203, 235, 250);
+  /* border: 1px solid; */
+  height: 8vh;
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  padding: 0 8vh;
+}
+
+@media (max-width: 1040px){
+  .header{
+    padding: 0 0;
+  }
 }

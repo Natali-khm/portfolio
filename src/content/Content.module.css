@@ -1,0 +1,6 @@
+.contentBlock {
+  background-color: #f6fbff;
+  flex-grow: 1;
+  display: flex;
+  width: 60%;
+}
