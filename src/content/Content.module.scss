@@ -1,0 +1,8 @@
+@import "../common/styles/sass/variables.scss";
+
+.contentBlock {
+  background-color: $bgColor;
+  flex-grow: 1;
+  display: flex;
+  width: 60%;
+}

@@ -1,0 +1,28 @@
+@import '../styles/sass/variables.scss';
+@import '../styles/sass/mixins.scss';
+
+.titleContainer {
+  /* border: 1px solid green; */
+  margin-bottom: 55px;
+
+  .title {
+    @include text($fontFamily:$poppinsFontFamily, $fontWeight:700, $color:$primaryColor);
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    @include flex($justifyContent:space-between);
+    gap: 25px;
+    &:after {
+      content: "";
+      height: 2px;
+      background-color: #c3bfc8;
+      display: inline-block;
+      flex-grow: 1;
+    }
+    @media (max-width: 768px) {
+      letter-spacing: 4px;
+    }
+    @media (max-width: 1600px) {
+      letter-spacing: 7px;
+    }
+  }
+}

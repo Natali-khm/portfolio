@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from './AuthorImage.module.css'
+import styles from './AuthorImage.module.scss'
 
 
 const AuthorImage = () => {

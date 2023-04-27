@@ -1,0 +1,21 @@
+@import "../../common/styles/sass/mixins.scss";
+
+.valueList {
+  li {
+    /* border: 1px solid red; */
+    @include flex($justifyContent:flex-start);
+    margin-bottom: 15px;
+    .first {
+      /* border: 1px solid blue; */
+      display: flex;
+      min-width: 40px;
+      img {
+        width: 20px;
+      }
+    }
+    .second {
+      /* border: 1px solid rgb(43, 189, 233); */
+      line-height: 1.5;
+    }
+  }
+}

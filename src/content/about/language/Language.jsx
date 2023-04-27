@@ -2,7 +2,7 @@ import React from "react";
 import { Title } from "../../../common/components/Title";
 import { English } from "./English";
 import { Russian } from "./Russian";
-import styles from './Language.module.css'
+import styles from './Language.module.scss'
 import commonStyles from "../../../common/styles/Container.module.css";
 
 

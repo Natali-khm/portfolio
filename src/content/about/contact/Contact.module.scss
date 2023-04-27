@@ -1,0 +1,103 @@
+@import '../../../common/styles/sass/variables.scss';
+@import '../../../common/styles/sass/mixins.scss';
+
+.contactsWrapper {
+  @include flex($justifyContent:space-between);
+  flex-wrap: wrap;
+
+  @media (max-width: 1500px) {
+    justify-content: center;
+  }
+
+  .left {
+    /* border: 1px solid rgb(234, 49, 187); */
+    width: 240px;
+    .item {
+      border: 1px solid rgba(0, 0, 0, 0.07);
+      height: 100px;
+      margin-bottom: 25px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+
+    @media (max-width: 1500px) {
+      width: 100%;
+    }
+  }
+  .right {
+    /* border: 1px solid green; */
+    width: 50%;
+
+    @media (max-width: 1500px) {
+      width: 100%;
+      margin-top: 30px;
+    }
+    .form {
+      /* border: 1px solid red; */
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      min-width: 30%;
+      textarea,
+      input {
+        @include text($fontFamily:$poppinsFontFamily, $fontSize:14px, $lineHeight:1.6, $color:$primaryColor);
+        background-color: transparent;
+        letter-spacing: 1.4px;
+        padding: 10px;
+      }
+      input {
+        border: none;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+        height: 44px;
+        &:last-of-type {
+          margin: 0 0 30px;
+        }
+      }
+      textarea {
+        border: 1px solid rgba(0, 0, 0, 0.07);
+        height: 120px;
+        resize: none;
+        margin-bottom: 30px;
+      }
+      textarea:focus,
+      input:focus {
+        outline: none;
+      }
+    }
+    button {
+      @include text($fontFamily:$poppinsFontFamily, $fontWeight:500, $fontSize:15px, $color:$btnTextColor);
+      background-color: $primaryColor;
+      padding: 13px 38px;
+      border: 2px solid $primaryColor;
+      align-self: start;
+      cursor: pointer;
+      &:hover {
+        background-color: transparent;
+        color: $primaryColor;
+      }
+    }
+  }
+}
+
+::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: #c6c5c8;
+  font-size: 12px;
+}
+:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #c6c5c8;
+}
+::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #c6c5c8;
+}
+:-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: #c6c5c8;
+}

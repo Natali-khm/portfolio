@@ -1,6 +1,6 @@
 import React from "react";
 import { Title } from "../../../common/components/Title";
-import styles from "./Biography.module.css";
+import styles from "./Biography.module.scss";
 import commonStyles from "../../../common/styles/Container.module.css";
 
 export const Biography = () => {

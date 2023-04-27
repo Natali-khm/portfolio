@@ -1,0 +1,21 @@
+@import "../common/styles/sass/mixins.scss";
+
+.footer {
+  /* border: 1px solid red; */
+  @include flex($justifyContent: flex-end);
+  height: 8vh;
+  padding: 0 8vh;
+  .social {
+    /* border: 1px solid; */
+    @include flex($justifyContent: space-between);
+    flex-wrap: wrap;
+    gap: 20px;
+    .icon {
+      /* border: 1px solid; */
+      height: 20px;
+      img {
+        width: 20px;
+      }
+    }
+  }
+}

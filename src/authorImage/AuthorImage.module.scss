@@ -1,13 +1,12 @@
+@import "../common/styles/sass/variables.scss";
+
 .photoContainer {
   width: 40%;
   height: 84vh;
-  background-color: #f6fbff;
+  background-color: $bgColor;
   background-image: url("../assets/images/monica.jpg");
   background-size: cover;
-}
-
-@media (max-width: 1040px) {
-  .photoContainer {
+  @media (max-width: 1040px) {
     width: 0px;
     height: 0px;
     background-image: none;

@@ -1,0 +1,65 @@
+@import "../../common/styles/sass/variables.scss";
+@import "../../common/styles/sass/mixins.scss";
+
+.homeOuterContainer {
+  /* border: 1px solid green; */
+  align-self: center;
+  width: 100%;
+
+  .homeInnerContainer {
+    /* border: 2px solid #333; */
+    padding-left: 100px;
+    padding-right: 20px;
+    @media (max-width: 1040px) {
+      padding: 0 20px;
+    }
+
+    .name {
+      @include text($poppinsFontFamily, 700, 3.6vw, 1.2, $primaryColor);
+      text-transform: uppercase;
+      margin-bottom: 30px;
+      @media (max-width: 1040px) {
+        font-size: 40px;
+      }
+    }
+
+    .line {
+      display: inline-block;
+      width: 70px;
+      height: 5px;
+      background-color: $primaryColor;
+      margin-bottom: 30px;
+      @media (max-width: 768px) {
+        height: 3px;
+        width: 40px;
+      }
+      @media (max-width: 1600px) {
+        width: 60px;
+        height: 4px;
+        margin-bottom: 25px;
+      }
+    }
+
+    .job {
+      @include text($poppinsFontFamily, 300, 25px, 1.2);
+      margin-bottom: 35px;
+
+      span b {
+        font-weight: 600;
+        color: $primaryColor;
+      }
+    }
+
+    .linkButton a {
+      @include text($fontFamily:$poppinsFontFamily, $fontWeight:500, $color:$btnTextColor);
+      background-color: $primaryColor;
+      text-decoration: none;
+      padding: 13px 38px;
+      display: inline-block;
+      border: 2px solid $primaryColor;
+      @media (max-width: 768px) {
+        padding: 10px 28px;
+      }
+    }
+  }
+}

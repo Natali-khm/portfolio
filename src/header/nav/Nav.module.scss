@@ -1,0 +1,34 @@
+@import "../../common/styles/sass/variables.scss";
+@import "../../common/styles/sass/mixins.scss";
+
+.nav {
+  /* border: 1px solid; */
+  padding-left: 8vh;
+  @include flex($justifyContent:space-between);
+  flex-wrap: wrap;
+  font-family: "Poppins";
+  @media (max-width: 584px) {
+    padding-right: 20px;
+  }
+  .link {
+    text-decoration: none;
+    padding: 8px 30px;
+    display: inline-block;
+    font-weight: 500;
+    color: $primaryColor;
+    @media (max-width: 584px) {
+      padding: 3px 8px;
+    }
+    &:hover {
+      background-color: $primaryColor;
+      color: $btnTextColor;
+    }
+  }
+}
+
+.nav {
+  .activeLink {
+    background-color: $primaryColor;
+    color: $btnTextColor;
+  }
+}

@@ -1,0 +1,7 @@
+@import "../../common/styles/sass/mixins.scss";
+
+.wrapper {
+  /* border: 10px solid rgb(73, 237, 36); */
+  @include flex($justifyContent: space-between, $alignItems:flex-start);
+  flex-wrap: wrap;
+}

@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./English.module.css";
+import styles from "./English.module.scss";
 
 export const English = () => {
   return (

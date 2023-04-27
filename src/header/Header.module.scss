@@ -1,0 +1,12 @@
+@import '../common/styles/sass/mixins.scss';
+
+.header {
+  /* border: 1px solid; */
+  height: 8vh;
+  @include flex($justifyContent:flex-end);
+  padding: 0 8vh;
+  
+  @media (max-width: 1040px) {
+    padding: 0 0;
+  }
+}

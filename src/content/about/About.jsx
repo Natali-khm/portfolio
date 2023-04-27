@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./About.module.css";
+import styles from "./About.module.scss";
 import commonStyles from "../../common/styles/Container.module.css";
 import { Biography } from "./biography/Biography";
 import { Programming } from "./programming/Programming";
